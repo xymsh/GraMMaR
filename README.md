@@ -3,7 +3,7 @@
 <p align="center">
 <a href=""><img  src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a>
 
-<h4 align="center">This is the official repository of the paper <a href="">GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction</a>. 
+<h4 align="center">This is the official repository of the paper <a href="https://arxiv.org/abs/2306.16736">GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction</a>. 
 
 The code will be released soon.</h4>
 
