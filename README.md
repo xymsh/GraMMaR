@@ -8,7 +8,7 @@
 The code will be released soon.</h4>
 
 
-<h5 align="center">Sihan Ma, Qiong Cao, Hongwei Yi, Jing Zhang, and Dacheng Tao</em></h5>
+<h5 align="center">Sihan Ma, Qiong Cao, Jing Zhang, and Dacheng Tao</em></h5>
 
 <p align="center">
   <a href="#introduction">Introduction</a> |
