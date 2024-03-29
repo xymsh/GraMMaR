@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://xymsh.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://xymsh.github.io/RICH-CAT">
+            RICH-CAT
+          </a>
+          <a class="navbar-item" href="https://github.com/ViTAE-Transformer/P3M-Net">
+            Rethink P3M
+          </a>
+          <a class="navbar-item" href="https://github.com/JizhiziLi/P3M">
+            P3M
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction</h1>
+          <h2 class="title is-3 publication-title">ACMMM 2023</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://xymsh.github.io/">Sihan Ma</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://qiongcao.github.io/">Qiong Cao</a><sup>2</sup>,</span>
+            <span class="author-block">
+                <a href="https://xyyhw.top/">Hongwei Yi</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=9jH5v74AAAAJ">Jing Zhang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en">Dacheng Tao</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Sydney, Australia</span>
+            <span class="author-block"><sup>2</sup>JD Explore Academy, China</span>
+            <span class="author-block"><sup>3</sup>Max Plank Institute for Intelligent Systems, Germany</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2306.16736.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/uA5jJFcnuAM?si=0WtcuPtXkWkBU4mm"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/xymsh/GraMMaR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img  src="static/images/teaser.png" width="100%" height=auto scrolling="no" frameborder="0" >
+      </img>
+      <h2 class="subtitle has-text-justified">
+        <span>GraMMaR</span>: 3D motion in the camera view is misleading. A representative optimization method HuMoR produces correct
+        poses under camera view but physically implausible poses in world view when faced with ambiguity (Row1) and noise (Row2).
+        In contrast, our method provides a ground-aware motion, thereby ensuring physical plausibility across all views. <tagname style="color:blue">Body torso
+        direction</tagname> and contacts for <tagname style="color:red">HuMoR</tagname> and <tagname style="color:green">ours</tagname> are highlighted. GT in Row1 is reconstructed from multi-view images.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Demystifying complex human-ground interactions is essential for 
+            accurate and realistic 3D human motion reconstruction from RGB
+            videos, as it ensures consistency between the humans and the
+            ground plane. Prior methods have modeled human-ground interactions 
+            either implicitly or in a sparse manner, often resulting
+            in unrealistic and incorrect motions when faced with noise and
+            uncertainty. In contrast, our approach explicitly represents these
+            interactions in a dense and continuous manner. To this end, we
+            propose a novel Ground-aware Motion Model for 3D Human Motion Reconstruction, 
+            named GraMMaR, which jointly learns the distribution of transitions in both 
+            pose and interaction between every joint and ground plane at each time step 
+            of a motion sequence. It is trained to explicitly promote consistency between the
+            motion and distance change towards the ground. After training,
+            we establish a joint optimization strategy that utilizes GraMMaR
+            as a dual-prior, regularizing the optimization towards the space of
+            plausible ground-aware motions. This leads to realistic and coherent motion reconstruction, irrespective of the assumed or learned
+            ground plane. Through extensive evaluation on the AMASS and
+            AIST++ datasets, our model demonstrates good generalization and
+            discriminating abilities in challenging cases including complex and
+            ambiguous human-ground interactions. 
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/uA5jJFcnuAM?si=QJs0R3O3A4xq39zV"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<!-- Paper method -->
+<section class="section hero ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="container is-centered">
+          <img  src="static/images/network.png"   width="100%" height=auto scrolling="no" frameborder="0" >
+        </img> 
+        </div>
+      </div>
+    </div>
+    <div class="content has-text-justified">
+    <p>Our model GraMMaR architecture. In training, given the previous state I_{t-1} and current state I_t
+      , we obtain the motion state x_{t-1}, x_t
+      , and interaction state g_{t-1}, g_t
+      . Our model learns the transition of motion and interaction state changes separately by two
+      priors and reconstructs x^t
+      , g^t by sampling from the two distributions and decoding them conditioned on both x_{t-1} and g_{t-1}.</p>
+    </div>
+  </div>
+</section>
+<!-- End method -->
+
+
+<!-- BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{ma2023grammar,
+        title={GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction},
+        author={Ma, Sihan and Cao, Qiong and Yi, Hongwei and Zhang, Jing and Tao, Dacheng},
+        booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+        pages={2817--2828},
+        year={2023}
+      }
+    </code></pre>
+  </div>
+</section>
+<!-- End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Thanks to <a href="https://keunhong.com/">Keunhong Park</a> for the <a href="https://nerfies.github.io/">website template</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

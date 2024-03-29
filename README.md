@@ -1,9 +1,12 @@
-<h1 align="center">GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction</h1>
+<h1 align="center">[ACMMM23] GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction</h1>
 
 <p align="center">
-<a href=""><img  src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a>
+<a href="https://arxiv.org/abs/2306.16736"><img  src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a>
+<a href="https://youtu.be/uA5jJFcnuAM?si=QJs0R3O3A4xq39zV"><img src="https://img.shields.io/badge/YouTube-Demo-blue"></a>
+<a href="https://xymsh.github.io/GraMMaR"><img src="https://img.shields.io/badge/project%20page-8A2BE2"></a>
+</p>
 
-<h4 align="center">This is the official repository of the paper <a href="https://arxiv.org/abs/2306.16736">GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction</a>. 
+<h4 align="center">This is the official repository of the paper <a href="https://arxiv.org/abs/2306.16736">[ACMMM23] GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction</a>. 
 
 The code will be released soon.</h4>
 
@@ -12,14 +15,15 @@ The code will be released soon.</h4>
 
 <p align="center">
   <a href="#introduction">Introduction</a> |
-  <a href="#analysis">Interaction state</a> |
+  <!-- <a href="#analysis">Interaction state</a> |
   <a href="#grammar">GraMMaR</a> |
   <a href="#optimization">Joint optimization</a> |
-  <a href="#results">Results</a> |
-  <a href="#statement">Statement</a>
+  <a href="#results">Results</a> | -->
+  <a href="#statement">Statement</a> |
+  <a href="https://youtu.be/uA5jJFcnuAM?si=QJs0R3O3A4xq39zV">Video Demo</a>
 </p>
 
-<img src="demo/teaser.png" width="100%">
+<img src="static/images/teaser.png" width="100%">
 <p align="justify"> 3D motion in the camera view is misleading. A representative optimization method HuMoR [34 ] produces correct
 poses under camera view but physically implausible poses in world view when faced with ambiguity (Row1) and noise (Row2).
 In contrast, our method provides a ground-aware motion, thereby ensuring physical plausibility across all views. To achieve
@@ -27,11 +31,11 @@ it, we explicitly present the human-ground interaction and devise a CVAE-based m
 transitions in interaction and pose. Body torso direction and contacts for HuMoR and ours are highlighted. GT in Row1 is
 reconstructed from multi-view images.</p>
 
-***
+<!-- ***
 ><h3><strong><i>:postbox: News</i></strong></h3>
 >
 > [2023-06-29]: The code will be released soon.
-***
+*** -->
 
 ## Introduction
 
@@ -45,34 +49,18 @@ After training, we establish a joint optimization strategy that utilizes **GraMM
 
 Through extensive evaluation on the AMASS and AIST++ datasets, our model demonstrates good generalization and discriminating abilities in challenging cases including complex and ambiguous human-ground interactions. </p>
 
-![](demo/network.png)
-
-<!-- ## <span id="analysis">Human-Ground Interaction Analysis</span>
-
-
-## <span id="grammar">GraMMaR: Ground-aware Generative Motion Model</span>
-
-<p align="justify"></p>
-
-![](demo/network.png)
-
-## <span id="optimization">Joint Optimization</span>
-
-
-## Results
-
-<p align="justify">We test our GraMMaR model on two settings, 1), 2).</p>
--->
+![](static/images/network.png)
 
 ## Statement
 
 <p align="justify">If you are interested in our work, please consider citing the following:</p> 
 
 ```
-@article{grammar2023,
+@inproceedings{ma2023grammar,
   title={GraMMaR: Ground-aware Motion Model for 3D Human Motion Reconstruction},
-  author={Sihan Ma, Qiong Cao, Jing Zhang, Dacheng Tao},
-  journal={arXiv preprint arXiv:2306.16736},
+  author={Ma, Sihan and Cao, Qiong and Yi, Hongwei and Zhang, Jing and Tao, Dacheng},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={2817--2828},
   year={2023}
 }
 ```
